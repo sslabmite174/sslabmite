@@ -1,0 +1,6 @@
+void main()
+{
+
+	int ab=5,b=10;int
+	printf("%d",a+b);
+}
