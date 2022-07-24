@@ -64,11 +64,17 @@ void check(){
     for(z=0;z<c;z++){
         if(stk[z]=='E' && stk[z+1]=='+' && stk[z+2]=='T' && stk[z+3]=='*')break;
         if(stk[z]=='E' && stk[z+1]=='+' && stk[z+2]=='T'){
+            if(a[j+1]=='*')break;
+ 
+          else
+          { 
             stk[z]='E';
             stk[z+1]='\0';
             stk[z+2]='\0';
             printf("\n$%s\t%s$\t%s\n",stk,a,ac);
             i=i-2; 
+            
+          }
         }
         else if(stk[z]=='T'){
             stk[z]='E';
